@@ -1,0 +1,71 @@
+﻿<html>
+<head>
+<link rel="stylesheet" href="mf.css">
+<style>
+#b	{
+	border-radius:5px;
+	background: #1da0f2;
+        padding: 0 30px;
+	font-size: 15px;
+	font-weight: 700;
+   	color: #fff;
+	border: none;
+	transition: 1s;
+	line-height:30px
+	}
+#b:hover {background:#0b74c0;}
+#black	{
+	border-radius:25px 25px 0px 0px;
+      	border:5px solid black;
+      	color:#ffffff;
+      	background-color:black 
+	}
+#tf	{
+	border-radius:5px;
+	border:5px solid #e5e5e5;
+    	line-height: 25px;
+    	padding: 0 12px;
+	background:#e5e5e5;
+	}
+#f	{
+    	font-size: 15px;
+    	font-weight: 700;
+	}
+</style>
+<script language="javascript" type="text/javascript">
+function fun()
+{
+document.getElementById("div").innerHTML="Account Added &#x2705"
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<br><br>
+<div align=center>
+<table  HEIGHT=250 WIDTH=800>
+<tr>
+<td>		&nbsp;&nbsp;&nbsp;<lable id="f">ENTER CARD NUMBER </lable>			</td>
+<td>  : <input type="text" id="tf" placeholder="card number" size=25>		</td>
+</tr>
+<tr>
+<td>		&nbsp;&nbsp;&nbsp;<lable id="f">ENTER CARDHOLDER NAME </lable>			</td>
+<td>  : <input type="text" id="tf" placeholder="Name" size=25>		</td>
+</tr>
+<tr>
+<td>		&nbsp;&nbsp;&nbsp;<lable id="f">ENTER CVV </lable>			</td>
+<td>  : <input type="password" id="tf" placeholder="CVV" size=25>		</td>
+</tr>
+<tr>
+<td>		&nbsp;&nbsp;&nbsp<lable id="f">EXPIRY DATE </lable>			</td>
+<td>  : <input type="TEXT" id="tf" placeholder="MM/YY" size=25>		</td>
+</tr>
+</table>
+</div>
+<br><br>
+<center><input type="button" value="Add" id="b" onclick="fun()"></center>
+<br>
+<div id="div" align=center style="font-size:30px"> </div>
+</form>
+</body>
+</html>

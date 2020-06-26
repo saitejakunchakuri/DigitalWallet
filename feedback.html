@@ -1,0 +1,40 @@
+﻿<html>
+<head>
+<link rel="stylesheet" href="mf.css">
+<style>
+#b	{
+	border-radius:25px;
+	background: #1da0f2;
+        padding: 0 30px;
+	font-size: 25px;
+	font-weight: 700;
+   	color: #fff;
+	border: none;
+	transition: 1s;
+	line-height:45px
+	}
+#b:hover {background:#0b74c0;}
+</style>
+<script language="javascript" type="text/javascript">
+function fun()
+{
+
+document.getElementById("div").innerHTML="Thanks! for your feedback";
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<br><br>
+<center><label style="font-size: 25px">F<small>EEDBACK</small></center></label>
+<br>
+<center>
+<textarea rows=10 cols=60 placeholder="Give Your Feedback!"></textarea>
+</center>
+<br>
+<center><input type="button" id=b value="submit" onclick="fun()"></center><br>
+<div id="div" align=center style="font-size:30px"> </div>
+</form>
+</form>
+</body>
+</html>

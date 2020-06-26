@@ -1,0 +1,48 @@
+﻿<html>
+<head>
+<link rel="stylesheet" href="mf.css">
+<style>
+#b	{
+	border-radius:5px;
+	background: #1da0f2;
+        padding: 0 30px;
+	font-size: 15px;
+	font-weight: 700;
+   	color: #fff;
+	border: none;
+	transition: 1s;
+	line-height:30px
+	}
+#b:hover {background:#0b74c0;}
+#tf	{
+	border-radius:5px;
+	border:5px solid #e5e5e5;
+    	line-height: 25px;
+    	padding: 0 12px;
+	background:#e5e5e5;
+	}
+</style>
+<script language="javascript" type="text/javascript">
+function fun()
+{
+var x=document.f1.t1.value;
+var y=document.f1.t2.value;
+document.getElementById("div").innerHTML=x+" Rupees sent to "+y +"&#9989;"
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<br><br>
+<center><label style="font-size:40px">S<small>END</small> M<small>ONEY</small></label></center>
+<br><br>
+<center><input type="text" id="tf" placeholder="Enter Number To Send Money" name="t2"  size=40 ></center>
+<br><br>
+<center><input type="text" id="tf" placeholder="Enter Amount" name="t1" size=40 ></center>
+<br><br>
+<center><input type="button" id=b value="Send" onclick="fun()"></center>
+<br><br>
+<div id="div" align=center style="font-size:30px"> </div>
+</form>
+</body>
+</html>

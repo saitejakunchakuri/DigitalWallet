@@ -1,0 +1,154 @@
+﻿<!doctype html>
+<html>
+<head>
+<style>
+#b	{
+	border-radius:5px;
+	background: #ff4b5a;
+        padding: 0 30px;
+	font-size: 15px;
+	font-weight: 700;
+   	color: #fff;
+	border: none;
+	transition: 1s;
+	line-height:30px
+	}
+#b:hover {background:#ff0507;}
+#black	{
+	border-radius:25px 25px 0px 0px;
+      	border:5px solid black;
+      	color:#ffffff;
+      	background-color:black 
+	}
+#tf	{
+	border-radius:5px;
+	border:5px solid #e5e5e5;
+    	line-height: 25px;
+    	padding: 0 12px;
+	background:#e5e5e5;
+	}
+#white	{
+	border-radius:0px 0px 25px 25px;
+	border:5px solid white;
+	color:black;
+	background-color:white
+	}
+#f	{
+    	font-size: 15px;
+    	font-weight: 700;
+	}
+</style>
+<script language="javascript" type="text/javascript">
+function fun()
+{
+var name=document.f1.t1.value;
+var x=name.length;
+var letters = /^[A-Za-z0-9]+$/;
+if(name.match(letters))
+     {
+      if(x<6||x>20)
+		{
+		alert("enter username with minimum 6 characters and maximum 20 characters");
+		document.f1.t1.value="";
+		return false;
+		}
+		else return true;
+     }
+   else
+     {
+     alert("enter username with no special characters or white spaces");
+     return false;
+     }
+var pwd=document.f1.t2.value;
+var y=pwd.length;	 
+if(y<6||y>15)
+		{
+		alert("enter password with minimum 6 characters and maximum 15 characters");
+		document.f1.t2.value="";
+		return false;
+		}
+		else return true;
+var phn=document.f1.t3.value;
+var z=phn.length;
+if(z!=10)
+		{
+		alert("enter valid mobile number");
+		document.f1.t3.value="";
+		return false;
+		}
+		else return true;	
+var mail=document.f1.t4.value;
+var mformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(!mail.match(mformat))
+		{
+		alert("enter valid mail");
+		document.f1.t4.value="";
+		return false;
+		}
+		else return true;	
+		
+}
+</script>
+<title>REGISTRATION FORM</title>
+</head>
+<body background="reg.jpg" >
+<form name="f1" onsubmit="return fun()" method="post" action="login.html" >
+<div align="center"   >
+<br><br>
+<table  cellspacing=0 >
+<tr>
+<td >
+<table height=50 width=600 id="black" ><tr><th><lable id="f">REGISTRATION FORM</lable> </th></tr></table>
+</td>
+</tr>
+<tr ><td  >
+<table  height=550 width=600 id="white" >
+<tr>
+<td>   		&nbsp;&nbsp;&nbsp;<lable id="f">NAME </lable>  			</td>
+<td>   		: <input type="text" id="tf" name="fm"  placeholder="First Name" size=20 >   		</td>
+<td>		<input type="text" id="tf" name="lm" placeholder="Last Name" size=20 ></td> 	</td>
+</tr>
+<tr>
+<td>		&nbsp;&nbsp;&nbsp;<lable id="f">USERNAME </lable>			</td>
+<td colspan=2>  : <input type="text" id="tf" name="t1" placeholder="Enter User ID" size=57 >		</td>
+</tr>
+<tr>
+<td>		&nbsp;&nbsp;&nbsp;<lable id="f">PASSWORD </lable>			</td>
+<td colspan=2>  : <input type="password" id="tf" name="t2" placeholder="Password" size=57 >		</td>
+</tr>
+<tr>
+<td>		&nbsp;&nbsp;&nbsp;<lable id="f">PHONE NO </lable>			</td>
+<td colspan=2>  : <input type="text" id="tf" name="t3" placeholder="Phone Number" size=57 >		</td>
+</tr>
+<tr>
+<td> 		&nbsp;&nbsp;&nbsp;<lable id="f">EMAIL </lable> 			</td>
+<td colspan=2>	: <input type="text" id="tf" name="t4" placeholder="Email Id" size=57 >		</td>
+</tr>
+<tr>
+<td> 		&nbsp;&nbsp;&nbsp;<lable id="f">GENDER </lable> 			</td>
+<td colspan=2>	: <input type="radio" name="ra"><lable id="f" >MALE </lable>&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="ra"><lable id="f" >FEMALE </lable>			</td>
+</tr>
+<tr>
+<td> 		&nbsp;&nbsp;&nbsp;<lable id="f">DOB </lable> 				</td>
+<td colspan=2>	: <input type="date" name="dob" >					</td>
+</tr>
+<tr>
+<td colspan=3>  
+<table  width=580>
+<tr>
+<th>		<input type="reset" value="Clear" id="b">				</th>
+<th>		<input type="submit" value="Submit" id="b" >	</th>				
+</tr>
+</table>
+</td>
+</tr>
+
+</table>
+</td></tr>
+
+</table>
+</div>
+</form>
+</body>
+</html>

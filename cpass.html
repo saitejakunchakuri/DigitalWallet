@@ -1,0 +1,68 @@
+﻿<html>
+<head>
+<link rel="stylesheet" href="mf.css">
+<style>
+#b	{
+	border-radius:5px;
+	background: #1da0f2;
+        padding: 0 30px;
+	font-size: 15px;
+	font-weight: 700;
+   	color: #fff;
+	border: none;
+	transition: 1s;
+	line-height:30px
+	}
+#b:hover {background:#0b74c0;}
+#black	{
+	border-radius:25px 25px 0px 0px;
+      	border:5px solid black;
+      	color:#ffffff;
+      	background-color:black 
+	}
+#tf	{
+	border-radius:5px;
+	border:5px solid #e5e5e5;
+    	line-height: 25px;
+    	padding: 0 12px;
+	background:#e5e5e5;
+	}
+#f	{
+    	font-size: 15px;
+    	font-weight: 700;
+	}
+</style>
+<script language="javascript" type="text/javascript">
+function fun()
+{
+document.getElementById("div").innerHTML="Password Changed Successfully&#9989;"
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<br><br>
+<div align=center>
+<table  HEIGHT=250 WIDTH=800>
+<tr>
+<td>		&nbsp;&nbsp;&nbsp;<lable id="f">ENTER CURRENT PASSWORD </lable>			</td>
+<td>  : <input type="password" id="tf" placeholder="Old Password " size=45>		</td>
+</tr>
+
+<tr>
+<td>		&nbsp;&nbsp;&nbsp;<lable id="f">ENTER NEW PASSWORD </lable>			</td>
+<td>  : <input type="password" id="tf" placeholder="New Password" size=45>		</td>
+</tr>
+<tr>
+<td>		&nbsp;&nbsp;&nbsp<lable id="f">RE-ENTER PASSWORD </lable>			</td>
+<td>  : <input type="password" id="tf" placeholder="New Password" size=45>		</td>
+</tr>
+</table>
+</div>
+<br><br>
+<center><input type="button" value="Change" id="b" onclick="fun()"></center>
+<br>
+<div id="div" align=center style="font-size:30px"> </div>
+<form>
+</body>
+</html>
